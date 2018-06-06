@@ -3,6 +3,20 @@ Using API Gateway stage variables to manage Lambda functions
 
 ## Lambda
 
+### Creating Lambda function
+```js
+exports.handler = async (event, context, callback) => {
+    // TODO implement
+    console.log(' -=-=-= peter test -=-=-=')
+    console.log('event', event)
+    console.log('context', context)
+    callback(null, {statusCode: 200, body: JSON.stringify({a:'123'})})
+};
+```
+![image](https://user-images.githubusercontent.com/5538753/41021901-9df0443a-699a-11e8-992a-41a446cc1742.png)
+
+
+
 ### Logging
 
 ![image](https://user-images.githubusercontent.com/5538753/41021279-6da185d4-6998-11e8-8438-6da1d1e6c5aa.png)
